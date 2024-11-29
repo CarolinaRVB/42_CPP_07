@@ -6,12 +6,21 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 18:27:50 by crebelo-          #+#    #+#             */
-/*   Updated: 2024/11/28 19:10:04 by crebelo-         ###   ########.fr       */
+/*   Updated: 2024/11/29 09:40:13 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Array.hpp"
 
+
+/*
+    - Class with a template-based implementation of a dynamic array
+    that simulates a typical array with additional features.
+        - Dynamic memory allocation for any type T
+        - Deep copy via constructors and assignement operators
+        - Indexing with bounds checking via custom exception
+        - Initialization of elements with the Type's default constructor.
+*/
 template <typename T>
 Array<T>::Array() : _arr(NULL), _len(0) {
     std::cout << "Default constructor called\n";
